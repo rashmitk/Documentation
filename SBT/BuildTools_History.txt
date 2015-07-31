@@ -1,0 +1,17 @@
+Credit of being first build tool goes to Make, It was created in 1976 at Bell Labs and released its first version on 1977. It was widely used in Unix and Unix like OS e.g. GNU. Like every build tool which require its main configuration which describes the logic about what to compile, how to compile, where to get the dependencies, how to package the build etc. Make tool also required similar configuration file known as makefile. Makefile is file describing rules and target to carry out basic building process. Makefile tells Make how to compile and link a program. Using C/C++ as an example, when a C/C++ source file is changed, it must be recompiled. If a header file has changed, each C/C++ source file that includes the header file must be recompiled to be safe. Make tool was great for Unix OS and machine dependent languages e.g. C and C++. However Make tool lacked the portability and native support for Windows OS and thus was not suitable for Windows OS and platform independent language like Java who came 20 years later in 1995.
+
+So when the Tomcat project team was developing a web server for Java, they needed a build tool who supports cross platform build..because one can use Java to write its application on any platform and so same build tool should work there as well. This is how 'Another Neat Tool'(ANT) born and later become top level project of Apache Software Foundation..and got its first release in year 2000. Ant solved the limitation of Make tool by being a cross-platform build tool because it was written in Java language and specifically for Java language. Apart from Java there was another language who was gaining popularity during the same time frame and that was XML whose first version XML 1.0 released in 1998 & got the W3C approval. Apache Ant used XML as its build configuration file i.e. build.x because it was popular at that time, very easy to read, easy write easy and understand and also very easily portable. So portability issue of Make tool get fixed with Ant. The strong point of Apache Ant was it was offering complete control of build. However this complete control and XML solution came with its price and price was verbosity. XML was too verbose and build developer has to take care everything from compilation of code to managing the dependencies.
+
+This limitation of Ant tool made a team of Apache Turbine frustrated. 
+
+
+virtue becomes curse
+power comes with its price
+
+
+On the Make
+
+RAKE (Ruby's Make) - Build tool for Ruby having rakefiles similar to makefiles, DSL written in Ruby
+SCon - Build tool for Python, DSL written in Python
+
+DSL based build tool e.g. SBT, Scon, RAKE etc are cross platform, It means they support multiple platforms.
