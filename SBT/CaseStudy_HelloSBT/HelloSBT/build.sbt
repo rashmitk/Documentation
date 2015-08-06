@@ -13,6 +13,7 @@ name := "HelloSBT"
 
 libraryDependencies ++= 
 		Seq("junit" % "junit" % "4.10",
+			"com.novocode" % "junit-interface" % "0.8" % "test->default",
 			"org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
     		)
     		
