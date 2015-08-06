@@ -24,7 +24,7 @@ README.txt			Project's readme
 
 With Maven, you only have to declare the dependencies and Maven will download them, setup the classpath for you,  and even deploy the dependencies with your application, if required. Maven manages not only the direct dependencies for you, but even the dependencies of the dependecies (transitive dependencies). This is the real strength of Maven. Ant doesn't have such capabilities out-of-the-box (except via Ivy) and it will take a considerable amount of work to emulate Maven's dependency management with Ant.
 
-Even though both Ant and Maven are highly popular and have become industry standards, they have one weak point: build logic has to be described in XML. XML is great for describing hierarchical data, but falls short on expressing program flow and conditional logic. As the build script grows in complexity, maintaining the build code becomes a nightmare.
+Even though both Ant and Maven are highly popular and have become industry standards, they have one weak point: build logic has to be described in XML. XML is great for describing hierarchical data, but falls short on expressing program flow and conditional logic. As the build script grows in complexity, maintaining the build code becomes a nightmare. To extend the functionality of build, Maven1 provided jelly-script using which you could write your custom build logic however jelly-script was limited as a programming language. Maven2 address this issue by allowing custom logic to be written in MOJO (Maven's plain old java object) plugin using Java language.
 
 
 
